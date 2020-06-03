@@ -1,6 +1,6 @@
 {
   "name": "observable-callback",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small utility for simplified creation of callback functions that publishes the argument to an observable stream when called.",
   "main": "dist/cjs/observableCallback.js",
   "types": "dist/cjs/observableCallback.d.ts",
