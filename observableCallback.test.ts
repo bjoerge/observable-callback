@@ -2,7 +2,7 @@ import {observableCallback} from "./observableCallback"
 import {map} from "rxjs/operators"
 
 test("emits passed argument", () => {
-  const [args$, cb] = observableCallback()
+  const [args$, cb] = observableCallback<string>()
 
   let receivedArg
   args$.subscribe((passedArg) => (receivedArg = passedArg))
@@ -10,7 +10,7 @@ test("emits passed argument", () => {
   cb("foo")
   expect(receivedArg).toBe("foo")
 
-  //@ts-ignore (todo: replace with //@ts-expect-error)
+  //@ts-expect-error
   cb("bar", "baz")
   expect(receivedArg).toBe("bar")
 })
