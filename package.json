@@ -45,5 +45,8 @@
   "bugs": {
     "url": "https://github.com/bjoerge/observable-callback/issues"
   },
-  "homepage": "https://github.com/bjoerge/observable-callback#readme"
+  "homepage": "https://github.com/bjoerge/observable-callback#readme",
+  "engines": {
+    "node": ">=16"
+  }
 }
